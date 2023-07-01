@@ -46,20 +46,25 @@ const TodoWrapper = () => {
 
   return (
     <div className="todo-wrapper">
-      <TodoForm addTodo={addTodo} />
-      {todos.map((todo, index) =>
-        todo.isEditing ? (
-          <EditTodoForm editTodo={editTask} task={todo} />
-        ) : (
-          <Todo
-            task={todo}
-            key={index}
-            toggleComplete={toggleComplete}
-            deleteTodo={deleteTodo}
-            editTodo={editTodo}
-          />
-        )
-      )}
+      <h1>What you're going to do today?</h1>
+      <div>
+        <TodoForm addTodo={addTodo} />
+      </div>
+      <div className="tasks-container">
+        {todos.map((todo, index) =>
+          todo.isEditing ? (
+            <EditTodoForm editTodo={editTask} task={todo} />
+          ) : (
+            <Todo
+              task={todo}
+              key={index}
+              toggleComplete={toggleComplete}
+              deleteTodo={deleteTodo}
+              editTodo={editTodo}
+            />
+          )
+        )}
+      </div>
     </div>
   );
 };

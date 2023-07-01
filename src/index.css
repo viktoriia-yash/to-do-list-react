@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #fff5e4;
+  color: #6f4c5b;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
 }
 
 .App {
@@ -13,6 +20,92 @@
 }
 
 .todo-wrapper {
-  padding: 10px;
-  width: 400px;
+  border: 1px solid #dfa67b;
+  width: 450px;
+  height: 500px;
+  border-radius: 1rem;
+  box-shadow: rgb(255, 245, 228) 5px 5px 0px -1px, rgb(223, 166, 123) 5px 5px,
+    rgb(255, 245, 228) 10px 10px 0px -1px, rgb(223, 166, 123) 10px 10px,
+    rgb(255, 245, 228) 15px 15px 0px -1px, rgb(223, 166, 123) 15px 15px,
+    rgb(255, 245, 228) 20px 20px 0px -1px, rgb(223, 166, 123) 20px 20px;
+  padding: 1.3rem;
+}
+
+h1 {
+  font-family: "Gloock", serif;
+  font-size: 37px;
+  color: #f4b183;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form {
+  text-align: center;
+}
+
+.todo-input {
+  border: none;
+  border-bottom: 1px solid #dfa67b;
+  background-color: transparent;
+  padding: 5px 10px;
+  width: 65%;
+  margin-bottom: 2rem;
+  outline: none;
+}
+
+.todo-btn {
+  border: 1px solid #dfa67b;
+  background-color: #dfa67b;
+  color: #fff5e4;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.tasks-container {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-bottom: 1px solid #dfa67b;
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fa-pen-to-square {
+  font-size: 15px;
+}
+
+.fa-trash {
+  font-size: 15px;
+  margin-left: 0.75rem;
+}
+
+.update-input {
+  border: none;
+  border-bottom: 1px solid #dfa67b;
+  background-color: transparent;
+  padding: 5px 10px;
+  width: 75%;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.update-btn {
+  border: 1px solid #dfa67b;
+  background-color: #dfa67b;
+  color: #fff5e4;
+  padding: 4.5px 10px;
+  cursor: pointer;
+}
+
+.completed {
+  color: #f4b183;
+  text-decoration: line-through;
 }
