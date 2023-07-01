@@ -46,7 +46,18 @@ const TodoWrapper = () => {
 
   return (
     <div className="todo-wrapper">
-      <h1>What you're going to do today?</h1>
+      <h2>What you're going</h2>
+      <h2>to do today?</h2>
+      <p className="github-link">
+        <a
+          href="https://github.com/viktoriia-yash/to-do-list-react"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Open-source code
+        </a>{" "}
+        by Viktoriia Yashkina
+      </p>
       <div>
         <TodoForm addTodo={addTodo} />
       </div>

@@ -31,13 +31,23 @@
   padding: 1.3rem;
 }
 
-h1 {
+h2 {
   font-family: "Gloock", serif;
-  font-size: 37px;
-  color: #f4b183;
+  font-size: 30px;
   letter-spacing: 5px;
   text-align: center;
+  line-height: 35px;
+  color: #f4b183;
+}
+
+a {
+  color: #6f4c5b;
+}
+
+.github-link {
   margin-bottom: 2rem;
+  font-size: 12px;
+  text-align: center;
 }
 
 .form {
@@ -108,4 +118,24 @@ h1 {
 .completed {
   color: #f4b183;
   text-decoration: line-through;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .todo-wrapper {
+    width: 300px;
+  }
+
+  h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    line-height: 35px;
+  }
+
+  .todo-input {
+    width: 50%;
+  }
+
+  .update-input {
+    width: 60%;
+  }
 }
